@@ -1,0 +1,41 @@
+:root{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    }
+.logopng{
+    display: block;
+    background-color: #A12040;
+    text-align: center;
+}
+.logo{
+    background-color: #A12040;
+    padding:20px;
+    padding-top: 10px;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+} 
+.menu {
+    background-color: #A12040;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    z-index: 100;
+    color:#fff;
+    overflow: hidden; 
+}
+.cajas:hover {
+    background-color:#6D142A;
+}
+.cajas {
+    background-color: #A12040;
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+    font-size: 16px;
+    padding: 20px;
+}
+body {
+    overflow: hidden;
+    text-align: center;
+    color: black;
+}
