@@ -65,21 +65,14 @@ h2 {
     padding: 10px;
     font-weight: 400;
 }
-.galeria {
-	width: 60%;
-	margin: auto;
-	list-style: none;
-	padding: 10px;
-	box-sizing: border-box;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-    background-color:rgb(221, 205, 205);
-}
-
-.galeria img {
+.splide_slide img {
 	width: 150px;
 	height: 150px;
+    border: 2px solid #a1a1a1;
+    object-fit: cover;
+}
+.splide_list {
+    list-style: none;
 }
 .catalogo_productos {
     font-size: 20px;

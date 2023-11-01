@@ -35,6 +35,7 @@ header{
     z-index: 100;
     overflow: hidden; 
     font-weight: 600;
+    padding-bottom: 20px;
 }
 .cajas:hover {
     background-color:#bbbbbb;
@@ -55,40 +56,69 @@ h1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
-h2 {
-    font-size: 18px;
-    font-weight: 600;
+.categorias {
     grid-column-start: 1;
     grid-column-end: 1;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-right: 3px solid #bcbcbc;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+.categorias:hover {
+    background-color: #eee94d;
 }
 .secciones {
     padding-left: 40px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-right: 3px solid #bcbcbc;
+    border-left: 2px solid  #bcbcbc;
 }
-.catalogo {
+.pagina_catalogo {
     grid-column-start: 1;
     grid-column-end: 1;
 }
-.productos {
-    display: flex;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    width: 60%;
-	margin: auto;
-	list-style: none;
-	padding: 30px;
-	box-sizing: border-box;
-	justify-content: space-around;
-}
-.productos img {
-	width: 150px;
-	height: 150px;
-}
-.productos li {
-    padding: 15px;
-}
+.galeria_productos {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    gap: 1.5rem;
+    list-style: none;
+    margin-top: 2rem;
+  }
+  .galeria_item {
+    width: 100%;
+    margin-bottom: .25rem;
+  }
+  .precio_producto {
+    margin-bottom: 0;
+    font-size: .875rem;
+    text-align: center;
+    color: #444;
+  }
+  @media only screen and (min-width: 480px) {
+    :root {
+      --columns: 1;
+    }
+  }
+  @media only screen and  (min-width: 768px) {
+    :root {
+      --columns: 1;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    :root {
+      --columns: 1;
+    }
+  }
+  @media only screen and  (min-width: 1200px) {
+    :root {
+      --columns: 4;
+    }
+  }
+  @media only screen and  (min-width: 1400px) {
+    :root {
+      --columns: 4;
+    }
+  }
