@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+:root{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Raleway', sans-serif;
+    }
+header{
+    display: flexbox;
+    text-align: center;
+    position:sticky;
+}
+.logopng{
+    text-align: center;
+}
+.logo{
+    background-color: #A12040;
+    padding:20px;
+    padding-top: 10px;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.logo span{
+    display: block;
+}
+.menu {
+    display: flex;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden; 
+    font-weight: 600;
+}
+.cajas:hover {
+    background-color:#bbbbbb;
+}
+.cajas {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-style: bold;
+    font-size: 16px;
+    padding: 20px;
+}
+h1 {
+    font-size: 30px;
+    padding: 10px;
+    padding-top: 40px;
+}
+.grilla {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 3px solid #bcbcbc;
+}
+.secciones {
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-right: 3px solid #bcbcbc;
+}
+.catalogo {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.productos {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 60%;
+	margin: auto;
+	list-style: none;
+	padding: 30px;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+.productos img {
+	width: 150px;
+	height: 150px;
+}
+.productos li {
+    padding: 15px;
+}
