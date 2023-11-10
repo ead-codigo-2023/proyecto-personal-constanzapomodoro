@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creatividad</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -14,47 +14,151 @@
 </head>
 <header>
     <div class="logo"> 
-        <img src="images 2/tiaruth-logo.png" class="logopng" alt="Logo de la librería Tia Ruth" width="105px" height="105px">
+        <img src="../images/tiaruth-logo.png" class="logopng" alt="Logo de la librería Tia Ruth" width="105px" height="105px">
         <span>Librería Tia Ruth</span>
     </div>
-    <div class="menu">
-        <div class="cajas" href="#">Catálogo</div>
-        <div class="cajas" href="#">Cotiza tu lista escolar</div>
-        <div class="cajas" href="#">Contacto</div>
-    </div>
+    <nav class="menu">
+      <ul>
+          <li class="dropdown">
+              <a class="catalogo-button" href="../creatividad/index.html">Catálogo</a>
+              <ul class="sub-menu">
+                  <li><a href="#">Cuadernos</a></li>
+                  <li><a href="../creatividad/index.html">Creatividad</a></li>
+                  <li><a href="#">Herramientas</a></li>
+                  <li><a href="#">Lápices</a></li>
+                  <li><a href="#">Papelería</a></li>
+              </ul>
+          </li>
+          <li><a href="../cotiza tu lista/index.html">Cotiza tu lista</a></li>
+          <li><a href="../contacto/index.html">Contacto</a></li>
+      </ul>
+    </nav>
 </header>
+<div class="breadcrames">
+    <a href="#" class="breadcrames_text">Home/</a>
+    <a href="#" class="breadcrames_text">Catálogo/</a>
+    <a href="#" class="breadcrames_text">Creatividad/</a>
+</div>
 <body>
+    <h1 class="titulos">Catálogo</h1>
     <div class="grilla">
-        <div id="pagina_catalogo">
+        <div id="catalogo_lateral">
+            <div class="categorias">Cuadernos</div> 
             <div class="categorias">Creatividad</div> 
-            <div class="secciones">Ver todo</div>
-            <div class="secciones">Pintura</div>
-            <div class="secciones">Plástica</div>
-            <div class="secciones">Decoración</div>
+                <div class="secciones">Ver todo</div>
+                <div class="secciones">Pintura</div>
+                <div class="secciones">Plástica</div>
+                <div class="secciones">Decoración</div>
             <div class="categorias">Papelería</div> 
             <div class="categorias">Lápices</div> 
             <div class="categorias">Herramientas</div> 
-            <div class="categorias">Cuadernos</div> 
+    
         </div>
         <ul class="galeria_productos">
-            <li class="galeria_item>
-              <img href="images 2/productos/cuadernos-universitarios" alt="Cuadernos universitarios college" width="300" heigth="300" loading="lazy">
-              <p class="precio_producto">Cuadernos universitarios<br> $0000</p>
-            </li>
-            <li class="galeria_item>
-                <img src="images 2/productos/lapices-de-colores.jpg" alt="Lápices de colores Torre" width="300" heigth="300" loading="lazy">
-                <p class="precio_producto">Lápices de colores<br> $0000</p>
-            </li>
-            <li class="galeria_item>
-                <img src="images 2/productos/scotch.png" alt="Scotch ancho" width="300" heigth="300" loading="lazy">
-                <p class="precio_producto">Scotch<br> $0000</p>
-            </li>
-            <li class="galeria_item>
-                <img src="images 2/productos/temperas-de-colores-glitter.jpg" alt="Temperas de colores glitter" width="300" heigth="300" loading="lazy">
-                <p class="precio_producto">Temperas glitter<br> $0000</p>
-            </li>
+            <section class="cr_pintura">
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/pintura/cr-pintura1.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item">
+                    <img src="../images/productos/creatividad/pintura/cr-pintura2.png" alt="Tempera por unidad Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Frasco témpera Proarte 100ml<br> $1490</p>
+                </li>
+                <li class="galeria_item">
+                    <img src="../images/productos/creatividad/pintura/cr-pintura3.png" alt="Acuarela 12 colores Pentel" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Acuarela 12 colores Pentel<br> $0000</p>
+                </li>
+                <li class="galeria_item">
+                    <img src="../images/productos/creatividad/pintura/cr-pintura4.png" alt="Pintura por unidad para vidrio" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Frasco de pintura para vidrio<br> $0000</p>
+                </li>
+                <li class="galeria_item">
+                    <img src="../images/productos/creatividad/pintura/cr-pintura5.png" alt="Tinta china por unidad" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Frasco tinta china<br> $0000</p>
+                </li>
+            </section>
+            <section class="cr_decoracion">
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion1.jpg" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion2.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion3.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion4.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion5.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion6.jpeg" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion7.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion8.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion9.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion10.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion11.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion12.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion13.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+                <li class="galeria_item"></li>
+                    <img src="../images/productos/creatividad/decoracion/cr-decoracion14.png" alt="Témpera 12 unidades Proarte" width="150" heigth="150" loading="lazy">
+                    <p class="precio_producto">Caja de témperas Proarte<br> $0000</p>
+                </li>
+            </section>
         </ul>
     </div>
 </body>
+<span class="pre_footer">.</span>
+<footer>
+    <div class="contacto_footer">
+        <a class="boton_footer" href="https://www.google.com/maps/place/R%C3%ADo+Loncomilla+38,+Vi%C3%B1a+del+Mar,+Valpara%C3%ADso/@-33.0309193,-71.4976202,17z/data=!4m5!3m4!1s0x9689debc6bc8f1e3:0x299ac96ad8415c23!8m2!3d-33.0305955!4d-71.4960967?entry=ttu">
+          <i class="fa-solid fa-house fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer">Río Loncomilla 38, Viña del mar</div>
+        </a>
+        <a class="boton_footer">
+          <i class="fa-solid fa-phone fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer" href="#">+56983726539</div>
+        </a>
+        <a class="boton_footer" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwQfjdjCFrNvZpkgcRbtZKXLrGFGjDhHMPwJlTCBGxdMrwVRHWncfGHhzCcQBFwZBDjlSF">
+          <i class="fa-solid fa-envelope fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer">r.gonzalescortes777@gmail.com</div>
+        </a>
+        <a class="boton_footer" href="https://web.facebook.com/LibreriaTiaRuth">
+          <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer">Librería Tia Ruth</div>
+        </a>
+    </div>
+</footer>
+
 
 </html>

@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+:root {
+    margin: 0;
+}
+
+/*Pagina Home*/
+.logo{
+    overflow-x: hidden;
+    background-color: #A12040;
+    padding:20px;
+    padding-top: 10px;
+    width: 100%;
+    color:#fff;
+    text-align: center;
+} 
+.logo span{
+    display: block;
+}
+
+/*menu*/
+.menu {
+    background-color: #fffacd;
+    text-align: left;
+    padding: 40px;
+    
+}
+
+.menu ul li a{
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px;
+    z-index: 1;
+}
+
+.menu li {
+    display: inline;
+}
+.menu ul li a:hover {
+    transition: all 1,5s ease-out;
+    color:#A12040;
+
+}
+
+/* Estilo de la categoría 2 cuando se pasa el cursor sobre ella */
+.dropdown:hover .sub-menu {
+    display: block;
+    transition: all 1.5s;
+}
+
+/* Estilo del menú desplegable oculto por defecto */
+.sub-menu {
+    background-color: #fffacd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 20px;
+    display: none;
+    text-align: left;
+    position: absolute;
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border-radius: 1rem;
+}
+
+/* Estilo de los enlaces del menú desplegable */
+.sub-menu li a {
+    margin-left: 0;
+    padding: 0px;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+.sub-menu ul li a:hover{
+    display: block;
+    color:#A12040;
+    background-color: rgb(255, 255, 255);
+}
+
+/*Body*/
+body {
+    overflow-x: hidden;
+    text-align: center;
+    color: black;
+}
+.Ofertas {
+    font-weight: 600;
+    padding: 20px;
+    padding-top: 40px;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+.galeria {
+    border-top: solid 5px #c6c6c6;
+    border-bottom: solid 5px #c6c6c6;
+    position: relative;
+    margin: auto;
+}
+.galeria_fotos:hover{
+    width: 50%;
+    height: 50%;
+}
+.galeria_ofertas{
+    display: inline-flex;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+}
+.galeria_fotos {
+    margin: 5px;
+}
+
+.nombre_oferta {
+    display: block;
+}
+.precios {
+    padding: 10px;
+    display: inline-flex;
+    text-align: center;
+    font-weight: 600;
+}
+.titulos {
+    font-size: 35px;
+    margin-top: 40px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+h2 {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 400;
+}
+.catalogo_productos {
+    font-size: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    font-weight: 600;
+}
+.catalogo {
+    padding-bottom: 40px;
+}
+.boton_catalogo {
+    font-weight: 600;
+    position:relative;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffed49;
+    border-radius: 2rem;
+}
+.boton_catalogo:hover{
+    background-color:#c7be8b;
+}
+.pre_footer {
+    padding: 10px;
+    display: flex;
+    background-color: #fffacd;
+}
+footer{
+    overflow-x: hidden;
+    background-color: #A12040;
+    padding:15px;
+    color:#ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contacto_footer {
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    z-index: 100;
+    overflow: hidden; 
+    font-weight: 600;
+}
+.texto_footer {
+    float: right;
+    padding-top: 5px;
+    padding-right: 70px;
+    padding-left: 10px;
+    color:#fff
+}
+/*Breadcrames*/
+.breadcrames_text {
+    text-decoration: none;
+    text-align: left;
+    float: inline-start;
+    font-size: 15px;
+}
+.breadcrames {
+    margin-left: 50px;
+    margin-top: 30px;
+}
+/*Pagina Creatividad*/
+.grilla{
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr);
+}
+.catalogo_lateral {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.galeria_productos {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    display: flex;
+    list-style: none;
+}
+.galeria_item {
+    margin: 10px;
+}
+/*pagina cotiza tu lista*/
+.cotiza {
+    margin-bottom: 40px;
+}
+.como_cotizar{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    border-top: 4px dashed #A01010;
+    border-bottom: 4px dashed #A01010;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 3rem;
+    color: #242424;
+}
+.foto_clienta {
+    margin-top: 20px;
+    margin-bottom: 4rem; 
+    border-radius: 2rem;
+    border: 4px solid #A01010;
+}
+.boton_cotiza {
+    display: flexbox;
+    background-color: #ffed49;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #000000;
+    
+}
+/*pagina contacto*/
+.cuerpo_contacto {
+    margin-bottom: 2rem;
+}
+.boton_contacto {
+    width: 15%;
+    display:inline-block;
+    text-align: center;
+    background-color: #ffed49;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+.texto_contacto {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin: auto;
+    line-height: 2rem;
+}
+iframe {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}

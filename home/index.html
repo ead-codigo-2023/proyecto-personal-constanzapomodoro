@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Librería Tia Ruth</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -12,38 +12,66 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ebfd33acd2.js" crossorigin="anonymous"></script>
-    <script> src="home/script.js"</script>
 </head>
-<header>
-    <div class="logo"> 
-        <img src="images/tiaruth-logo.png" class="logopng" alt="Logo de la librería Tia Ruth" width="105px" height="105px">
-        <span>Librería Tia Ruth</span>
-    </div>
-    <div class="menu">
-        <div class="cajas" href="#">Catálogo</div>
-        <div class="cajas" href="#">Cotiza tu lista escolar</div>
-        <div class="cajas" href="#">Contacto</div>
-    </div>
-</header>
 <body>
-    <h1>Hola! Soy la tía Ruth</h1>
+  <header>
+      <div class="logo"> 
+          <img src="../images/tiaruth-logo.png" class="logopng" alt="Logo de la librería Tia Ruth" width="105px" height="105px">
+          <div>Librería Tia Ruth</div>
+      </div>
+      <nav class="menu">
+        <ul>
+            <li class="dropdown">
+                <a class="catalogo-button" href="../creatividad/index.html">Catálogo</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Cuadernos</a></li>
+                    <li><a href="../creatividad/index.html">Creatividad</a></li>
+                    <li><a href="#">Herramientas</a></li>
+                    <li><a href="#">Lápices</a></li>
+                    <li><a href="#">Papelería</a></li>
+                </ul>
+            </li>
+            <li><a href="../cotiza tu lista/index.html">Cotiza tu lista</a></li>
+            <li><a href="../contacto/index.html">Contacto</a></li>
+        </ul>
+      </nav>
+  </header>
+</body>
+<section class="presentacion">
+    <h1 class="titulos">Hola! Soy la tía Ruth</h1>
     <h2>Encuentra aquí los articulos de librería que buscas, y si no lo encuentras contáctame y lo buscaré por ti.</h2>
     <p class="Ofertas">Ofertas para ti</p>
-</body>
-<section class="splide" aria-label="galeria_ofertas">
-    <div class="splide_track">
-      <ul class="splide_list">
-        <li class="splide_slide">
-          <img src="images/productos/cuadernos-universitarios.jpg" alt="Cuadernos universitarios Torre">
+</section>
+<section>
+    <div class="galeria">
+      <ul class="galeria_ofertas">
+        <a><li class="galeria_fotos">
+          <img src="../images/productos/herramientas/tijeras y cuchillos/he-tijeras1.png" alt="Cuadernos universitarios Torre" height="200px" width="200px">
+          <span class="nombre_oferta">Tijera proarte</span>
+          <div class="precios">
+            <span style="text-decoration: line-through;">$1100</span><span>/$900</span>
+          </div>
+        </li></a>
+        <li class="galeria_fotos">
+          <img src="../images/productos/creatividad/decoracion/cr-decoracion1.jpg" alt="Scotch ancho" height="200px" width="200px">
+          <span class="nombre_oferta">Palos de helado colores</span>
+          <div class="precios">
+            <span style="text-decoration: line-through;">$890</span><span>/$600</span>
+          </div>
         </li>
-        <li class="splide_slide">
-          <img src="images/productos/lapices-de-colores.jpg" alt="Lápices de colores Torre">
+        <li class="galeria_fotos">
+          <img src="../images/productos/herramientas/pegamentos/he-pegamentos3.png" alt="Caja de temperas glitter" height="200px" width="200px">
+          <span class="nombre_oferta">Scotch grueso</span>
+          <div class="precios">
+            <span style="text-decoration: line-through;">$890</span><span>/$600</span>
+          </div>
         </li>
-        <li class="splide_slide">
-          <img src="images/productos/scotch.png" alt="Scotch ancho">
-        </li>
-        <li class="splide_slide">
-          <img src="images/productos/temperas-de-colores-glitter.jpg" alt="Caja de temperas glitter">
+        <li class="galeria_fotos">
+          <img src="../images/productos/creatividad/pintura/cr-pintura1.png" alt="Lápices de colores Torre" height="200px" width="200px">
+          <span class="nombre_oferta">Témperas 12 colores</span>
+          <div class="precios">
+            <span style="text-decoration: line-through;">$2500</span><span>/$2000</span>
+          </div>
         </li>
       </ul>
     </div>
@@ -51,22 +79,31 @@
 <div class="catalogo_productos">Catálogo de productos</div>
 <div class="catalogo">
     <a href="#" class="boton_catalogo">Papelería</a>
-    <a href=".../creatividad/index.html" class="boton_catalogo">Creatividad</a>
+    <a href="../creatividad/index.html" class="boton_catalogo">Creatividad</a>
     <a href="#" class="boton_catalogo">Lápices</a>
     <a href="#" class="boton_catalogo">Herramientas</a>
     <a href="#" class="boton_catalogo">Cuadernos</a>
 </div>
+<img src="../images/tiaruth-logo-caligrafia.png" alt="Logo caligrafía Tia Ruth"></img>
+<span class="pre_footer">.</span>
 <footer>
-    <div class="contacto">
-        <i class="fa-solid fa-house fa-2x" style="color: #ffffff;"></i>
-        <p class="cajas_contacto" href="#">Me encuentras en <br>
-            Río Loncomilla 38, Viña del mar</p>
-        <i class="fa-solid fa-phone fa-2x" style="color: #ffffff;"></i>
-        <p class="cajas_contacto" href="#">Mándame un mensaje<br>
-        +56983726539</p>
-        <i class="fa-solid fa-envelope fa-2x" style="color: #ffffff;"></i>
-        <p class="cajas_contacto" href="#">Envíame un correo electrónico<br>
-            r.gonzalescortes777@gmail.com</p>
+    <div class="contacto_footer">
+        <a class="boton_footer" href="https://www.google.com/maps/place/R%C3%ADo+Loncomilla+38,+Vi%C3%B1a+del+Mar,+Valpara%C3%ADso/@-33.0309193,-71.4976202,17z/data=!4m5!3m4!1s0x9689debc6bc8f1e3:0x299ac96ad8415c23!8m2!3d-33.0305955!4d-71.4960967?entry=ttu">
+          <i class="fa-solid fa-house fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer">Río Loncomilla 38, Viña del mar</div>
+        </a>
+        <a class="boton_footer">
+          <i class="fa-solid fa-phone fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer" href="#">+56983726539</div>
+        </a>
+        <a class="boton_footer" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHwQfjdjCFrNvZpkgcRbtZKXLrGFGjDhHMPwJlTCBGxdMrwVRHWncfGHhzCcQBFwZBDjlSF">
+          <i class="fa-solid fa-envelope fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer">r.gonzalescortes777@gmail.com</div>
+        </a>
+        <a class="boton_footer" href="https://web.facebook.com/LibreriaTiaRuth">
+          <i class="fa-brands fa-facebook fa-2x" style="color: #ffffff;"></i>
+          <div class="texto_footer">Librería Tia Ruth</div>
+        </a>
     </div>
 </footer>
 </html>
