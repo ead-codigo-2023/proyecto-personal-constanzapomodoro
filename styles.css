@@ -72,6 +72,7 @@
     margin-top: 20px;
     margin-bottom: 40px;
     border-radius: 1rem;
+    z-index: 100;
 }
 
 .sub-menu li a {
@@ -235,7 +236,6 @@ font-weight: 600;
 .catalogo_lateral {
     grid-column-start: 1;
     grid-column-end: 2;
-    position: static;
 }
 .galeria_productos {
     grid-column-start: 2;
@@ -275,7 +275,6 @@ font-weight: 600;
 .catalogo_lateral{
     display: grid;
     grid-template-rows: repeat(28, 1fr);
-    position: sticky;
 }
 .categorias{
     grid-row-start: 1;
@@ -377,14 +376,19 @@ iframe {
     padding: 10px;
     line-height: 3rem;
 }
+.comprar{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
 .boton_comprar{
+    grid-column-start: 4;
+    grid-column-end: 5;
     border: none;
     border-radius: 1rem;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 15px;
     padding-bottom: 15px;
-    float: inline-end;
     font-size: 17px;
     margin-right: 30%;
     text-decoration: none;
@@ -395,6 +399,11 @@ iframe {
 .boton_comprar:hover{
     background-color: #a1a1a1;
     color:#A12040;
+}
+.boton_cantidad{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 15px;
 }
 .masmenos{
     font-size: 18px;
@@ -420,7 +429,11 @@ iframe {
 }
 /*MEDIA QUERIES*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 100px) and (max-width: 600px) {
+    /*MENU*/
+    .menu{
+        padding: 10px;
+    }
     .menu ul li a{
         display: block;
         padding: 10px;
@@ -428,23 +441,24 @@ iframe {
         text-align: center;
     }
     .sub-menu {
-        visibility: hidden;
+        visibility: collapse;
     }
-    .footer {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
+    /*FOOTER*/
     .boton_footer{
         display: inline-flex;
+        padding: 30px;
+        margin: auto;
+        text-decoration: none;
+        scale: 1.5;
     }
     .texto_footer {
-        visibility: collapse;
+        display: none;
     }
     /*PAGINA "HOME"*/
     .logo-caligrafia{
         width: 100%;
         height: 100%;
+        margin: auto;
     }
     .boton_catalogo {
         display: block;
@@ -452,14 +466,33 @@ iframe {
     .galeria_ofertas {
         display: inline;
     }
-    /*PAGINA "CATALOGO"*/
-    .catalogo_lateral{
-        display: none;
+    .galeria_ofertas{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
+    /*PAGINA "CATALOGO"*/
     .cr{
         display: grid;
         grid-template-columns: 1fr;
         width: 100%;
+    }
+    .catalogo_lateral{
+        display: none;
+    }
+    .categorias{
+        display: none;
+    }
+    .secciones{
+        display: none;
+    }
+    .grilla{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .galeria_item{
+        width: 90%;
+        margin: 0;
+        margin-bottom: 20px;
     }
     /*PAGINA "CONTACTO*/
     .boton_contacto{
@@ -471,6 +504,7 @@ iframe {
     iframe {
         width: 100%;
     }
+    
     /*PAGINA "COTIZA TU LISTA"*/
     .como_cotizar {
         margin-left: 5%;
@@ -480,7 +514,174 @@ iframe {
         width: 100%;
         height: 100%;
     }
+    /*PAGINA "PRODUCTO"*/
+    .titulo_producto{
+        margin-bottom: 30px;
+    }
+    .comprar{
+        display: inline;
+    }
+    .boton_comprar{
+        float: none;
+        margin-right: 50px;
+    }
+    .boton_cantidad {
+        margin: auto;
+        float: none;
+    }
+    .descripcion_producto{
+        display: inline-block;
+        margin-top: 40px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
 }
-@media only screen and (max-width: 2000px) {
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+/*FOOTER*/
+    .boton_footer{
+        display: inline-flex;
+        padding: 30px;
+        margin: auto;
+        text-decoration: none;
+        scale: 1.2;
+    }
+    .texto_footer {
+        display: none;
+    }
+/*PAGINA "HOME"*/
+    .galeria_ofertas{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .logo-caligrafia{
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+/*PAGINA "CATALOGO"*/
+    .cr{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .catalogo_lateral{
+        display: none;
+    }
+    .categorias{
+        display: none;
+    }
+    .secciones{
+        display: none;
+    }
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .galeria_item{
+        width: 90%;
+        margin: 15px;
+    }
+    .galeria_productos{
+        padding: 0px;
+    }
+/*PAGINA "COTIZA TU LISTA"*/
+    .como_cotizar {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+/*PAGINA "CONTACTO*/
+    .boton_contacto{
+        display: inline-block;
+        width: 90%;
+        margin: 20px;
+        padding: 20px;
+    }
+    iframe {
+        width: 100%;
+    }
+/*PAGINA "CONTACTO*/
+    .boton_contacto{
+        display: block;
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+    iframe {
+        width: 100%;
+    }
+/*PAGINA "PRODUCTO"*/
+    .titulo_producto{
+        margin-bottom: 30px;
+    }
+    .comprar{
+        display: inline;
+    }
+    .boton_comprar{
+        float: none;
+        margin-right: 50px;
+    }
+    .boton_cantidad {
+        margin: auto;
+        float: none;
+    }
+    .descripcion_producto{
+        display: inline-block;
+        margin-top: 40px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 40px;
+    }
+
+}
+@media only screen and (min-width: 901px) and (max-width: 1400px) {
+    /*PAGINA "HOME"*/
+    .galeria_ofertas{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /*PAGINA "CONTACTO*/
+    .boton_contacto{
+        display: inline;
+        width: 70%;
+        padding: 20px;
+    }
+    .cuerpo_contacto{
+        margin-bottom: 30px;
+    }
+    iframe {
+        width: 80%;
+    }
+/*PAGINA "CATALOGO"*/
+.galeria_item{
+    width: 90%;
+    margin: 15px;
+}
+    
+/*PAGINA "PRODUCTO"*/
+    .titulo_producto{
+        margin-bottom: 30px;
+    }
+    .comprar{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .boton_comprar{
+        grid-column-start: 4;
+        grid-column-end: 5;
+    }
+    .boton_cantidad {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    .descripcion_producto{
+        display: inline-block;
+        margin-top: 40px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 40px;
+    }
 
 }
